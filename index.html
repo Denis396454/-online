@@ -144,14 +144,22 @@
             font-size: 300%;
             color: rgb(12, 175, 225);
         }
+        .classsss {
+            font-size: 50px;
+            color: rgb(12, 175, 225);
+        }
     </style>
     <title>онлайн блокнот</title>
 </head>
 <body>
-    
+    <input class="text" id="text" type="text">
+    <button id="hi">  </button>
+    <h2 id="id" class="classsss">text</h2>
     <h1 class="kettle">
         kettle
     </h1>
+
+    
     <h2 class="kettleteA">це мій язик программирования його название придумано по детски kettle якщо перевести з англіскої мови це чайник чайник єто чай чай п'ют дети дети це то му що мені 9 років ще що пойме ребенок название канала youtube юний_программист тик ток young_programmer9 я з України
 
     </h2>
@@ -159,5 +167,24 @@
     <h2 class="online-notepadb">онлайн блокнот цей проєкт ви бачите 1 я хотів зробити запис комментариев но не зміг і за цього тут немає комментариєв якщо ви хочете допомогти переходіть на тик ток канал young_programmer9 и пишите коменти допомоги с бекендом записи в гитхаб на питоне </h2>
     <h1 class="young_programmer9">когда я начал <h1 class="class">программировать<h1></h1>
     <h2 class="classs">программировать я начал примерно в 7 лет начал я из за 1 видео но какого разкажу на 1000 подписчиков в тик ток некоторие писали не начинай с c++ но писали попробуй питон html css js но они не знают то что я єто уже прошел еще 2 года назад ну пока</h2>
+    <script>
+        // https://www.youtube.com/watch?v=JeXqaKeJSRI
+        let secret;
+        document.getElementById("hi").onclick = function(){
+            let secret = document.getElementById("text");
+            let secret1 = secret.value; // реши только єту строку и всееееееееееееееееее
+            if (secret1 == "tea"){
+                document.getElementById("id").textContent = "kettle tea secret version     ";
+            }
+            else if (secret1 == "cat"){
+                document.getElementById("id").textContent = "а зачем ти по Англиськи вбил кот зачем?????????";
+            }
+            
+            // document.getElementById("id").textContent = secret1;
+        }
+        
+
+        </script>
+        
 </body>
 </html>
