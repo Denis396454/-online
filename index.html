@@ -196,13 +196,13 @@
     <title>онлайн блокнот</title>
 </head>
 <body>
-    <a href="https://youtube.com/@юний_программист">
+    <a target="_blank" href="https://youtube.com/@юний_программист">
         <img class="youtube" src="icon-youtube.jpg" alt="">
     </a>
-    <a class="icon-tiktok" href="https://tiktok.com/@young_programmer9/">
+    <a target="_blank" class="icon-tiktok" href="https://tiktok.com/@young_programmer9/">
         <img class="icon-tiktok" src="icon-tiktok.jpg" alt="">
     </a>
-    <a class="icon-github" href="https://github.com/Denis396454/online-notepad">
+    <a target="_blank" class="icon-github" href="https://github.com/Denis396454/online-notepad">
         <img class="icon-github" src="icon-github.jpg" alt="">
     </a>
     <input class="text" id="text" type="text">
@@ -232,6 +232,7 @@
     <h2 class="kettleteA">когда ми на барбе с Егор Бабиченко и Ярослав Прус и Платон Левченко и так далее просматривали мой сайт онлайн блокнот то они заметили ошибку ребенок и шутили об єтом єто 1 что они запомнили</h2>
     <script>
         // https://www.youtube.com/watch?v=JeXqaKeJSRI
+         
         let secret;
         document.getElementById("hi").onclick = function(){
             let secret = document.getElementById("text");
@@ -242,11 +243,9 @@
             else if (secret1 == "cat"){
                 document.getElementById("id").textContent = "а зачем ти по Англиськи вбил кот зачем?????????";
             }
-            else if (secret1 == "secretn1?"){
-                window.onload = function() {
-                    let abvcyt = document.referrer;
-                    document.getElementById("id").textContent = abvcyt;
-                }
+            else if (secret1 == "secretn1"){
+                let referer = document.referrer;
+                document.getElementById("id").textContent = referer;
             }
             
             // document.getElementById("id").textContent = secret1;
