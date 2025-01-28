@@ -169,12 +169,44 @@
             font-size: 500%;
             
         }
+        .youtube {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            left: 1150px;
+        }
+        .text {
+            position: relative;
+            top: -90px;
+            right: 210px;
+        }
+        .icon-tiktok {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            left: 472px;
+        }
+        .icon-github {
+            position: relative;
+            left: 369px;
+            width: 100px;
+            height: 100px;
+        }
     </style>
     <title>онлайн блокнот</title>
 </head>
 <body>
+    <a href="https://youtube.com/@юний_программист">
+        <img class="youtube" src="icon-youtube.jpg" alt="">
+    </a>
+    <a class="icon-tiktok" href="https://tiktok.com/@young_programmer9/">
+        <img class="icon-tiktok" src="icon-tiktok.jpg" alt="">
+    </a>
+    <a class="icon-github" href="https://github.com/Denis396454/online-notepad">
+        <img class="icon-github" src="icon-github.jpg" alt="">
+    </a>
     <input class="text" id="text" type="text">
-    <button id="hi">  </button>
+    <button class="text" id="hi">  </button>
     <h2 id="id" class="classsss">text</h2>
     <h1 class="kettle">
         kettle
@@ -209,6 +241,12 @@
             }
             else if (secret1 == "cat"){
                 document.getElementById("id").textContent = "а зачем ти по Англиськи вбил кот зачем?????????";
+            }
+            else if (secret1 == "secretn1?"){
+                window.onload = function() {
+                    let abvcyt = document.referrer;
+                    document.getElementById("id").textContent = abvcyt;
+                }
             }
             
             // document.getElementById("id").textContent = secret1;
