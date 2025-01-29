@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        * {
+            outline: 4px solid green !important;
+        }
         html {
             background-image: url(telegram-background.jpg);
             
@@ -173,12 +176,12 @@
             position: relative;
             width: 100px;
             height: 100px;
-            left: 1150px;
+            left: 578px;
         }
         .text {
             position: relative;
             top: -90px;
-            right: 210px;
+            
         }
         .icon-tiktok {
             position: relative;
@@ -188,22 +191,35 @@
         }
         .icon-github {
             position: relative;
-            left: 369px;
+            left: 731px;
+
             width: 100px;
             height: 100px;
         }
+        .github {
+            position: relative;
+            font-size: 90px;
+            top: -16px;
+            left: 620px;
+        }
+
+        
+        
     </style>
     <title>онлайн блокнот</title>
 </head>
 <body>
-    <a target="_blank" href="https://youtube.com/@юний_программист">
+    <a target="_blank" class="youtube" href="https://youtube.com/@юний_программист">
         <img class="youtube" src="icon-youtube.jpg" alt="">
     </a>
     <a target="_blank" class="icon-tiktok" href="https://tiktok.com/@young_programmer9/">
-        <img class="icon-tiktok" src="icon-tiktok.jpg" alt="">
+        
+            <img class="icon-tiktok" src="icon-tiktok.jpg" alt="">
+        
     </a>
-    <a target="_blank" class="icon-github" href="https://github.com/Denis396454/online-notepad">
-        <img class="icon-github" src="icon-github.jpg" alt="">
+    <img class="icon-github" src="icon-github.jpg" alt="">
+    <a target="_blank" class="github" class="lgvkmmjkvkjnkjnkcns" href="https://github.com/Denis396454/online-notepad">
+            
     </a>
     <input class="text" id="text" type="text">
     <button class="text" id="hi">  </button>
@@ -246,6 +262,10 @@
             else if (secret1 == "secretn1"){
                 let referer = document.referrer;
                 document.getElementById("id").textContent = referer;
+            }
+            else if (secret1 == "1000подписок"){
+                
+                document.getElementById("id").textContent = "https://youtu.be/TTsKX5jhaxY?feature=shared";
             }
             
             // document.getElementById("id").textContent = secret1;
